@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Oswald:wght@200..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 1.2rem;
+}
+img {
+  width: 100%;
+  max-width: 1100px;
+  height: 350px;
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+
+h2 {
+  font-family: Oswald, sans-serif;
+  color: black;
+  font-size: 1.6rem;
+  margin-top: 0;
+}
+
+ul {
+  color: #293c89;
+  font-size: 1.5rem;
+  width: 100%;
+  padding-left: 0.5rem;
+}
+
+a {
+  color: #d784e8;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  background-color: #293c89;
+}
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  background: #ffcccc;
+  padding: 1.5rem;
+  border-radius: 20px;
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .flex-container {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+  }
+}
+.bottom-links {
+  text-align: center;
+  margin: 2rem;
+}
+
+.button {
+  display: inline-block;
+  background: white;
+  color: #293c89;
+  padding: 1rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+.button:hover {
+  background: #d784e8;
+  color: white;
+}
